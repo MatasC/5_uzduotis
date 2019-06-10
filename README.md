@@ -1,12 +1,12 @@
-#5 užduotis. Duomenų nuskaitymas. URL skaitymas.
-##Programos tikslas
+# 5 užduotis. Duomenų nuskaitymas. URL skaitymas.
+## Programos tikslas
 Programa nuskaito tekstą iš failo, paskaičiuoja žodžių pasikartojimus ir išveda šių žodžių suvestinę. Taip pat ji nuskaito tekstinį failą į kurį yra įterpti keli URL ir sugeba atrasti ir išspausdinti tuos URL adresus.  
-##Paleidimas
+## Paleidimas
 Norint paleisti programą, užtenka nueiti į programos aplankalą ir parašyti komandą ``make``. Programa sukurs paleidžiamąjį failą, įvykdys užduotis ir sunaikins visus paleidžiamuosius failus išvalydama aplankalą.  
   
 **Visi galutiniai duomenys išvedami į failus ``Zodziu_suvestine.txt`` ir ``URL_suvestine.txt``**
 
-##Išvedimo pavyzdys
+## Išvedimo pavyzdys
 
 URL pavyzdys:  
 ```shell
@@ -35,6 +35,6 @@ Eilutes: 10 19
 Zodis: This
 Eilutes: 13 15 
 ```  
-##Versijų istorija
+## Versijų istorija
 ### [v1.0](https://github.com/MatasC/5_uzduotis/releases/tags/v1.0) - (2019–06–10)
 Atlikta ir galutinė programos versija su testiniais .txt failais.  
