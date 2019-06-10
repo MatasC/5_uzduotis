@@ -1,0 +1,23 @@
+Intelligence has been defined in many ways, including: the capacity for logic, understanding, self-awareness, 
+learning, emotional knowledge, reasoning, planning, creativity, critical thinking, 
+and problem solving. More generally, it can be described as the ability to perceive or infer information, and 
+to retain it as knowledge to be applied towards adaptive behaviors within an environment or context.
+
+Intelligence is most often studied in humans but has also been observed in both non-human animals and in plants. 
+Intelligence in machines is called artificial intelligence, which is commonly implemented in computer systems using programs and, 
+sometimes, appropriate hardware.
+
+The word "intelligence" derives from the Latin nouns intelligentia or intellēctus, 
+which in turn stem from the verb intelligere, to comprehend or perceive. In the Middle Ages, 
+the word intellectus became the scholarly technical term for understanding, and a translation 
+for the Greek philosophical term nous. This term, however, was strongly linked to the metaphysical 
+and cosmological theories of teleological scholasticism, including theories of the immortality of the soul, 
+and the concept of the Active Intellect (also known as the Active Intelligence). This entire approach to the 
+study of nature was strongly rejected by the early modern philosophers such as Francis Bacon, Thomas Hobbes, 
+John Locke, and David Hume, all of whom preferred the word "understanding" (in place of "intellectus" or "intelligence") 
+in their English philosophical works.[1][2] Hobbes for example, in his Latin De Corpore, used "intellectus intelligit", 
+translated in the English version as "the understanding understandeth", as a typical example of a logical absurdity.[3] The 
+term "intelligence" has therefore become less common in English language philosophy, but it has later been taken up 
+(with the scholastic theories which it now implies) in more contemporary psychology.[4]
+
+
