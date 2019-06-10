@@ -36,5 +36,7 @@ Zodis: This
 Eilutes: 13 15 
 ```  
 ## Versijų istorija
+### [v1.0.1](https://github.com/MatasC/5_uzduotis/releases/tags/v1.0.1) - (2019-06-10)
+README.md failo pataisymai.  
 ### [v1.0](https://github.com/MatasC/5_uzduotis/releases/tags/v1.0) - (2019–06–10)
 Atlikta ir galutinė programos versija su testiniais .txt failais.  
