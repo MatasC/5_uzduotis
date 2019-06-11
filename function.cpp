@@ -47,7 +47,7 @@ void skaiciavimas(multiset<All>& all, vector<Unique>& last)
 	cout << "Apskaiciuojami zodziu pasikartojimai ir issaugomos pasikartojimu eilutes." << endl;
 	std::multiset<All>::iterator a = all.begin();
 	int temp = 0, count = 0;
-	vector<size_t> pos;
+	set<size_t> pos;
 	string tem = a->word();
 	for (int i = 0; i < all.size(); i++)
 	{
@@ -60,7 +60,7 @@ void skaiciavimas(multiset<All>& all, vector<Unique>& last)
 			tem = a->word();
 			count = 1;
 			pos.clear();
-			pos.push_back(a->position());
+			pos.insert(a->position());
 			temp++;
 		}
 		else if (i == all.size() - 1)
@@ -68,13 +68,13 @@ void skaiciavimas(multiset<All>& all, vector<Unique>& last)
 			last.push_back(Unique());
 			last[temp].Set_word(tem);
 			last[temp].Set_count(count + 1);
-			pos.push_back(a->position());
+			pos.insert(a->position());
 			last[temp].Set_Position(pos);
 		}
 		else
 		{
 			count++;
-			pos.push_back(a->position());
+			pos.insert(a->position());
 		}
 		a++;
 	}
@@ -90,18 +90,42 @@ void url_spausdinimas(set<string>& url)
 	out.close();
 }
 
+bool dydis(Unique a, Unique b)
+{
+	return a.count() < b.count();
+}
+
+bool zodis(Unique a, Unique b)
+{
+	return a.word_sz() < b.word_sz();
+}
+
 void spausdinimas(vector<Unique>& last)
 {
 	cout << "Zodziu duomenys yra isvedami i tekstini faila." << endl;
 	ofstream out;
 	out.open("Zodziu_suvestine.txt");
+	out << "Pasikartojimai abeceles tvarka: " << endl << endl;
+	std::vector<Unique>::iterator temp = std::max_element(last.begin(), last.end(), dydis);
+	for (int i = 2; i <= temp->count(); i++)
+	{
+		out << "Pasikartojo " << i << " kartu/us: " << endl;
+		for (int w = 0; w < last.size(); w++)
+		{
+			if (last[w].count() == i)
+			{
+				out << last[w].word() << " ";
+			}
+		}
+		out << endl;
+	}
+	out << "Zodziu pasikartojimu lentele: " << endl;
+	temp = std::max_element(last.begin(), last.end(), zodis);
 	for (int i = 0; i < last.size(); i++)
 	{
 		if (last[i].count() > 1)
 		{
-			out << "Zodis: " << last[i].word() << endl;
-			out << "Eilutes: ";
-			out << last[i];
+			out << setw(temp->word_sz()) << std::left << last[i].word() << std::left << last[i];
 		}
 	}
 	out.close();

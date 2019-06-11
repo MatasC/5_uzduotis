@@ -77,9 +77,19 @@ public:
 	Unique(Unique&& a) : Base(std::move(a.word_)), count_{std::move(a.count_)}, pos_{std::move(a.pos_)} {}
 	inline size_t count() const { return count_; }
 	inline size_t sz() const { return pos_.size(); }
+	inline size_t word_sz() const { return word_.length(); }
 	void Set_word(string a) { word_ = a; }
 	void Set_count(int a) { count_ = a; }
-	void Set_Position(vector<size_t> a) { pos_ = a; }
+	void Set_Position(set<size_t> a)
+	{
+		pos_.clear();
+		set<size_t>::iterator it = a.begin();
+		for (size_t i = 0; i < a.size(); i++)
+		{
+			pos_.push_back(*it);
+			it++;
+		}
+	}
 	bool operator<(const Unique& t) const
 	{
 		return (this->word_ < t.word_);
@@ -97,6 +107,8 @@ public:
 
 //Functions
 
+bool dydis(Unique, Unique);
+bool zodis(Unique, Unique);
 void skaitymas_all(multiset<All>&, string);
 void skaiciavimas(multiset<All>&, vector<Unique>&);
 void spausdinimas(vector<Unique>&);
